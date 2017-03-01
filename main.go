@@ -8,7 +8,7 @@ import(
 )
 
 func main() {
-   sess, err := session.NewSession()
+   sess, err := session.NewSession(&aws.Config{Region: aws.String("us-east-1")})
    if err != nil {
       fmt.Println("failed to create session,", err)
     return
