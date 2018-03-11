@@ -16,7 +16,7 @@ func main() {
    svc := ssm.New(sess)
 
 params := &ssm.AddTagsToResourceInput{
-    ResourceId:   aws.String("i-0b13394b7ca44e56f"),             // Required
+    ResourceId:   aws.String("i-09c1685acd31cb677"),             // Required
     ResourceType: aws.String("ManagedInstance"), // Required
     Tags: []*ssm.Tag{ // Required
         { // Required
